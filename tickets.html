@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     
+     <!-- CSS only -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+     <!-- Fonts-->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,400;1,300&display=swap" rel="stylesheet">
+ 
+    
+    <title>Document</title>
+</head>
+<body>
+    <header>
+         <!--Barra de Navegacion-->
+         <nav class="navbar navbar-expand-lg ">
+            <div class="container-fluid">
+                <a class="navbar-brand text-light" href="#bsasconf">
+                    Conf Bs As
+                </a>
+                <!-- LINKEAR-->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"data-bs-target="#navbarSupportedContent"aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent"> 
+                    <!--nav items-->
+                    <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active text-light" aria-current="page" href="#losoradores">La conferencia </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link active text-light" aria-current="page" href="#losoradores">Los oradores </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link active text-secondary" aria-current="page" href="#lufe">El lugar y la fecha</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active text-secondary" aria-current="page" href="#forms">Conviertete en un orador</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link  text-success" href="#">Comprar Tickets</a>
+                    </li>
+                                        
+                    </ul>
+                
+                </div>
+            </div>
+        </nav>
+    </header>
+     
+    <main>
+        
+     <!-- formulario -->
+        <form class="row g-3">
+
+            <div class="col-md-6">
+                <label for="inputNom" class="form-label"></label>
+                <input type="text" class="form-control" id="inputNom" placeholder="Nombre">
+            </div>
+
+            <div class="col-md-6">
+                <label for="inputApellido" class="form-label"></label>
+                <input type="text" class="form-control" id="inputApellido" placeholder="Apellido">
+            </div>
+
+            <div class="col-12">
+                <label for="inputMail" class="form-label"></label>
+                <input type="email" class="form-control" id="inputMail" placeholder="Correo">
+            </div>
+
+            <div class="col-12">
+                <label for="inputCant" class="form-label">Cantidad</label>
+                <input type="number" class="form-control" id="inputCant" placeholder="Cantidad">
+            </div>
+        
+            <div class="col-md-4">
+                <label for="categoria" class="form-label">Categoria</label>
+                <select id="categoria" class="form-select">
+                <option selected value="1">Estudiante</option>
+                <option value="2">Trainee</option>
+                <option value="3">Junior</option>
+            </div>
+
+            <div class="col-12 my-4">
+                <div class="alert alert-primary mb-0">
+                  <p id="total">Total a Pagar: $ </p>
+                </div>
+
+            </div>
+            
+           
+            <div class="col-12 my-4">
+                <div class="alert alert-primary mb-0">
+                    <p id="total">Total a Pagar: $ </p>
+                </div>
+            </div>
+            <div class="col-12">
+                <button type="reset" onclick="borrar()" class="btn boton text-light w-100" id="boton-borrar">Borrar</button>
+            </div>
+            <div class="col-12">
+                <button onclick="totalPagar()" type="button" class="btn boton text-light w-100" id="boton-resumen">Resumen</button>
+            </div>
+       
+        </form>
+        
+    </main>
+     
+    <footer>
+        <div class="container-fluid pie">
+            <a href="" >Preguntas frecuentes</a>
+            <a href="">Contáctanos</a>
+            <a href="">Prensa</a>
+            <a href="">Conferencias</a>
+            <a href="">Términos y condiciones</a>
+            <a href="">Privacidad</a>
+            <a href="">Estudiantes</a>
+        </div>
+        
+    </footer>
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+</body>
+</html>
