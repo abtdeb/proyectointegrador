@@ -22,6 +22,7 @@ function validarNombre() {
     }
 }
 
+
 botonEnviar.addEventListener("click", validarNombre);
 
 /*botonEnviar.addEventListener("click", validarApellido);*/

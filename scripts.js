@@ -6,6 +6,7 @@ const apellido = document.getElementById("Apellidoform");
 const mail = document.getElementById ("Emailform");
 const cantidad = document.getElementById("Cantticket");
 const botonResumen = document.getElementById("resum");
+/*const botonBorrar = document.getElementById("borrar");*/
 const expReg = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/ 
 
 const CantidadI = document.getElementById("Cantticket");
@@ -67,5 +68,8 @@ function TotalPago(){
     }
 }
 
+function borrar(){
+    totalp.innerHTML = "";
+}
 
 botonResumen.addEventListener("click", TotalPago);
