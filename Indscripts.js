@@ -24,6 +24,6 @@ function validarNombre() {
 
 botonEnviar.addEventListener("click", validarNombre);
 
-botonEnviar.addEventListener("click",validarApellido )
+/*botonEnviar.addEventListener("click", validarApellido);*/
 
 

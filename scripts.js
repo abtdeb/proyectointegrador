@@ -68,4 +68,4 @@ function TotalPago(){
 }
 
 
-botonResumen.addEventListener("click", totalp);
+botonResumen.addEventListener("click", totalp , validarT);
