@@ -43,7 +43,7 @@
                         <a class="nav-link active text-secondary" aria-current="page" href="#forms">Conviertete en un orador</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link  text-success" href="#">Comprar Tickets</a>
+                        <a class="nav-link  text-success" href="tickets.html">Comprar Tickets</a>
                     </li>
                                         
                     </ul>
@@ -83,7 +83,7 @@
                     <!--Botones-->
                     <div class="bton">
                         <button type="button" class="btn btn-outline-light"> <a href="#forms">  Quiero ser orador </a></button>
-                        <button type="button" class="btn btn-success">Comprar tickets</button>
+                        <button type="button" class="btn btn-success"> <a href="tickets.html"> Comprar tickets</a> </button>
                     </div>
 
                 </div>
@@ -187,11 +187,11 @@
                 <form action="" class="w-50">
                     <div class="row mb-2">
 
-                        <div class="col">
+                        <div class="col" id="campNom">
                           <input type="text" class="form-control" placeholder="Nombre" aria-label="Nombre">
                         </div>
 
-                        <div class="col">
+                        <div class="col" id="campApe">
                           <input type="text" class="form-control" placeholder="Apellido" aria-label="Apellido">
                         </div>
                     </div>
@@ -200,10 +200,18 @@
                         <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
                         <label for="floatingTextarea2">¿Sobre qué queres hablar ?</label>
                     </div>
-
-                    <p>Recuerda incluir un título para tu charla.</p>
+                    <div>
+                        <p>Recuerda incluir un título para tu charla.</p>
+                    </div>
+                   
                    <!--Botón--> 
-                    <button type="submit" class="btn btn-success w-100">Enviar</button>
+                    <button type="button" class="btn btn-success w-100" id="enviar">Enviar</button>
+
+                    <div class="">
+                        <p id="mensajeNombre"></p>
+                        <p id="mensajeApellido"></p>
+                      
+                    </div>
 
                 </form>
 
@@ -225,5 +233,8 @@
     </footer>
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+  
+    <script src="Indscripts.js"></script>
+    
 </body>
 </html>
