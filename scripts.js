@@ -25,7 +25,7 @@ function validarT(){
         alert("Ingrese un Email valido")
         return false
     }
-    else if(cantidad.value = 0){
+    else if(cantidad.value == 0){
         alert("Ingrese la cantidad de Tickets")
         return false
     }
@@ -43,23 +43,23 @@ function TotalPago(){
         switch(parseInt(CategSelec.value)){
             case 1:
                 total= CantidadI.value * 200;
-                totalp.innerHTML = "Total a Pagar " + total;
-                console.log("total");
+                totalp.innerHTML = "Total a Pagar $ " + total;
+             
                 break
 
             case 2:
                 total = CantidadI.value * (200-(200*(80/100)));
-                totalp.innerHTML = "Total a Pagar " + total;
+                totalp.innerHTML = "Total a Pagar $ " + total;
                 break
 
             case 3:
                 total = CantidadI.value * (200-(200*(50/100)));
-                totalp.innerHTML = "Total a Pagar " + total;
+                totalp.innerHTML = "Total a Pagar $ " + total;
                 break
             
             case 4:
               total = CantidadI * (200-(200*(15/100)));
-                    totalp.innerHTML = "Total a Pagar " + total;
+                    totalp.innerHTML = "Total a Pagar $ " + total;
                     break
 
             
@@ -68,4 +68,4 @@ function TotalPago(){
 }
 
 
-botonResumen.addEventListener("click", totalp , validarT);
+botonResumen.addEventListener("click", TotalPago);
