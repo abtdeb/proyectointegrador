@@ -44,6 +44,7 @@ function TotalPago(){
             case 1:
                 total= CantidadI.value * 200;
                 totalp.innerHTML = "Total a Pagar " + total;
+                console.log("total");
                 break
 
             case 2:
