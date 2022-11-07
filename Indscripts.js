@@ -22,9 +22,12 @@ function validarNombre() {
     }
 }
 
+function borrar (){
+    botonEnviar.innerHTML = " ";
+}
 
 botonEnviar.addEventListener("click", validarNombre);
 
-/*botonEnviar.addEventListener("click", validarApellido);*/
+botonEnviar.addEventListener("click", borrar);
 
 
