@@ -13,12 +13,12 @@ const botonEnviar = document.getElementById("enviar")
 
 
 
-function validarNombre(Pnombre) {
+function validarNombre() {
     if (Pnombre.value.length < 3) {
-        mensajeNomb.innerHTML = "INGRESE UN NOMBRE VALIDO";
+        alert("Ingrese un nombre valido");
     }
-    else{
-        mensajeNomb.innerHTML = "NOMBRE CORRECTO!!";
+    else if (apellido.value.length < 2) {
+        alert("Ingrese un apellido valido")
     }
 }
 
@@ -26,12 +26,4 @@ botonEnviar.addEventListener("click", validarNombre);
 
 botonEnviar.addEventListener("click",validarApellido )
 
-function validarApellido(apellido){
-    if(apellido.value.length < 2) {
-        mensajeApel.innerHTML = "INGRESE SU APELLIDO";
-    }
-    else{
-        mensajeApel.innerHTML = "APELLIDO CORRECTO"
-    }
 
-}
