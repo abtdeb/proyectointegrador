@@ -146,18 +146,18 @@
                              <label for="inputCateg" class="form-label">Categoria </label>
 
                             <select id="inputCateg" class="form-select">
-                                <option selected>-- Seleccione--</option>
-                                <option>Sin Categoria </option>
-                                <option>Estudiante</option>
-                                <option>Trainee</option>
-                                <option>Junior</option> 
+                                <option selected value="0">-- Seleccione--</option>
+                                <option value="1">Sin Categoria </option>
+                                <option value="2">Estudiante</option>
+                                <option value="3">Trainee</option>
+                                <option value="4">Junior</option> 
                             </select>
 
                         </div>
 
                             <div class="col-12 mt-5">
-                                <div class="alert alert-primary" role="alert">
-                                    Total a Pagar: $
+                                <div class="alert alert-primary" role="alert" >
+                                   <p id="totalp"> Total a Pagar: $ </p> 
                                 </div>
                             </div>
                             
@@ -171,14 +171,8 @@
                             <button type="button" class="btn btn-success w-100" id="resum">Resumen </button>
                         </div>
 
-                        <div class="">
-                            <p id="mensajeNombre"></p>
-                            <p id="mensajeApellido"></p>
-                            <p id="mensajeMail"></p>
-                            <p id="mensajeCantidad"></p>
-                            <p id="mensajeCategoria"></p>
-
-                        </div>
+                       
+                        
                     
                     </div>    
                     
